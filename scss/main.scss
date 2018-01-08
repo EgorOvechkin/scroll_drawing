@@ -1,7 +1,7 @@
-body { background: #0ea0bb; }
+body { background: #004; }
 .container { height: 300vh; }
 .tulip {
-  position: fixed; left: 50%; transform: translateX(-50%); 
+  position: fixed; left: 50%; transform: translateX(-50%);
   svg {
     fill-opacity: 0; transition: fill-opacity 1s;
     &.finished { fill-opacity: 1; }
