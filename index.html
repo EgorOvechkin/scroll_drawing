@@ -49,11 +49,13 @@
       }
 
       window.onscroll = function() {
-        scrollScale = $doc.scrollTop / ($doc.scrollHeight - $doc.clientHeight);
+        var scrollTop = $doc.scrollTop || document.body.scrollTop;
+        
+        scrollScale = scrollTop / ($doc.scrollHeight - $doc.clientHeight);
         paths.transition().attrTween("stroke-dasharray", function() {
           return tweenDash.bind(this, scrollScale);
         });
-        svg.classed('finished', scrollScale === 1);
+        svg.classed('finished', scrollScale > 0.95);
       }
     </script>
   </body>
