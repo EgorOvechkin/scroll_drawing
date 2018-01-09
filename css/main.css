@@ -1,17 +1,20 @@
 body {
-  background: #004; }
+  background: #004;
+}
 
 .container {
-  height: 300vh; }
+  height: 300vh;
+}
 
 .tulip {
   position: fixed;
   left: 50%;
-  transform: translateX(-50%); }
-  .tulip svg {
-    fill-opacity: 0;
-    transition: fill-opacity 1s; }
-    .tulip svg.finished {
-      fill-opacity: 1; }
-
-/*# sourceMappingURL=main.css.map */
+  transform: translateX(-50%);
+}
+.tulip svg {
+  fill-opacity: 0;
+  transition: fill-opacity 1s;
+}
+.tulip svg.finished {
+  fill-opacity: 1;
+}
