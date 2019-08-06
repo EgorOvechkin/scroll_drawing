@@ -1,7 +1,7 @@
 // содежимое index.js
 const http = require('http');
 const fs = require('fs');
-const port = 8000;
+const port = process.env.PORT || 5000;
 const url = require('url');
 
 const requestHandler = (request, response) => {
